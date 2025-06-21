@@ -1,12 +1,12 @@
-# 🚀 Professional 3D Portfolio Template
+# 3D Portfolio
 
-A modern, interactive 3D portfolio website template showcasing full-stack development expertise with stunning brown gradient design and Three.js animations.
+A modern, interactive 3D portfolio website showcasing full-stack development expertise with stunning brown gradient design and Three.js animations.
 
-![Portfolio Preview](https://img.shields.io/badge/Portfolio-Template-brightgreen)
+![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-brightgreen)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-blue)
 ![Three.js](https://img.shields.io/badge/Three.js-r128-orange)
 
-## ✨ Features
+## Features
 
 - **Interactive 3D Animations** - Immersive cube-based 3D scenes using Three.js
 - **Modern Brown Gradient Design** - Professional color scheme with warm tones
@@ -16,7 +16,7 @@ A modern, interactive 3D portfolio website template showcasing full-stack develo
 - **SEO Ready** - Proper meta tags, sitemap, and robot.txt
 - **Professional Sections** - Hero, About, Experience, Projects, and Contact
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend:** HTML5, CSS3 (Modern Features), Vanilla JavaScript
 - **3D Graphics:** Three.js with OrbitControls
@@ -24,7 +24,7 @@ A modern, interactive 3D portfolio website template showcasing full-stack develo
 - **Forms:** Netlify Forms integration
 - **Deployment:** Netlify ready with configuration files
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Local Development
 ```bash
@@ -55,15 +55,15 @@ npx http-server . -p 8000
 #### Manual Deploy
 Upload all files to your web server - no build process required!
 
-## 📧 Contact Form Setup
+## Contact Form Setup
 
 The contact form uses Netlify Forms for email delivery:
 - Update email address in HTML contact form
 - Form submissions send to your configured email
 - Includes success/error messaging
-- Professional email templates included
+- Professional email handling included
 
-## 🎨 Customization
+## Customization
 
 ### Colors
 Update the brown gradient scheme in `styles.css`:
@@ -83,22 +83,22 @@ Modify cube designs in `script.js`:
 - `createAboutObjects()` - About section animations
 - `createProjectObjects()` - Project showcase cubes
 
-## 📱 Performance Features
+## Performance Features
 
 - **Mobile Optimization** - Reduced particle count on mobile devices
 - **Lazy Loading** - Efficient resource loading
 - **Memory Management** - Proper cleanup and disposal
 - **Browser Compatibility** - Works on all modern browsers
 
-## 🔧 Browser Support
+## Browser Support
 
-- ✅ Chrome 80+
-- ✅ Firefox 75+
-- ✅ Safari 13+
-- ✅ Edge 80+
-- ✅ Mobile browsers
+- Chrome 80+
+- Firefox 75+
+- Safari 13+
+- Edge 80+
+- Mobile browsers
 
-## 📊 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -113,11 +113,11 @@ portfolio/
 └── README.md          # Documentation
 ```
 
-## 🌟 Highlights
+## Highlights
 
 - **Professional Design** - Clean, modern interface with brown gradient theme
 - **3D Innovation** - Unique cube-based animations replacing traditional designs
-- **Full-Stack Focus** - Emphasis on Java and scalable web applications
+- **Full-Stack Focus** - Emphasis on modern web technologies and scalable applications
 - **Contact Integration** - Working email form with professional styling
 - **Production Ready** - Optimized for deployment on Netlify/Render
 
