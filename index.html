@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - [Your Title]</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+    <link rel="stylesheet" href="styles.css?v=2.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Performance optimizations -->
+    <meta name="theme-color" content="#8B5CF6">
+    <meta name="description" content="[Your Name] - [Your Title] with expertise in [Technology 1], [Technology 2], [Technology 3], and modern web technologies">
+    <meta property="og:title" content="[Your Name] - [Your Title] Portfolio">
+    <meta property="og:description" content="Interactive 3D portfolio showcasing [your specialization] projects and skills">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://[yourusername].github.io/3d-portfolio/">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Gradient Background -->
+    <div class="gradient-bg">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+        <div class="gradient-orb orb-4"></div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader-container">
+            <div class="loader-text">
+                <span class="loading-word">Loading</span>
+                <span class="loading-word">Experience</span>
+                <span class="loading-word">Portfolio</span>
+            </div>
+            <div class="loader-progress">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="loader-percentage">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#hero" class="logo-link">
+                    <span class="logo-text">Portfolio</span>
+                    <div class="logo-dot"></div>
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#projects" class="nav-link" data-section="projects">Work</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 3D Canvas -->
+    <canvas id="three-canvas"></canvas>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        Available for hire
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-line gradient-text">[Your Name]</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        I develop <span class="highlight">[Your Specialty]</span> and <span class="highlight">[Your Focus Area]</span>
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">[X]+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">[Y]+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">[Z]+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <div class="btn-arrow">→</div>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll down & dive in</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Introduction</span>
+                    <h2 class="section-title">Overview</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a skilled <strong>[Your Title]</strong> with hands-on experience in designing and delivering 
+                            secure, scalable web applications through real-world projects and internships. I demonstrate strong 
+                            analytical thinking, attention to detail, and effective collaboration skills.
+                        </p>
+                        <p>
+                            I specialize in <strong>[Your Framework]</strong> like [Framework Examples], with expertise in 
+                            <strong>[Language 1]</strong>, <strong>[Language 2]</strong>, <strong>[Language 3]</strong>, and modern databases. I'm a quick learner who 
+                            collaborates closely with teams to create efficient, user-friendly solutions.
+                        </p>
+                    </div>
+                    <div class="skills-cards">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌐</div>
+                            <h3>[Skill Area 1]</h3>
+                            <p>Description of your first skill area and technologies you use</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚙️</div>
+                            <h3>[Skill Area 2]</h3>
+                            <p>Description of your second skill area and technologies you use</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🗄️</div>
+                            <h3>[Skill Area 3]</h3>
+                            <p>Description of your third skill area and technologies you use</p>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📊</div>
+                            <h3>[Skill Area 4]</h3>
+                            <p>Description of your fourth skill area and technologies you use</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">What I Have Done So Far</span>
+                    <h2 class="section-title">Work Experience</h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>[Your Job Title]</h3>
+                                <div class="timeline-company">[Company Name]</div>
+                                <div class="timeline-period">[Start Date] - [End Date]</div>
+                            </div>
+                            <div class="timeline-description">
+                                <ul>
+                                    <li>[Key achievement or responsibility #1]</li>
+                                    <li>[Key achievement or responsibility #2]</li>
+                                    <li>[Key achievement or responsibility #3]</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-tech">
+                                <span class="tech-tag">[Technology 1]</span>
+                                <span class="tech-tag">[Technology 2]</span>
+                                <span class="tech-tag">[Technology 3]</span>
+                                <span class="tech-tag">[Technology 4]</span>
+                                <span class="tech-tag">[Technology 5]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">My Work</span>
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-description">
+                        Following projects showcase skills and experience through real-world examples. 
+                        Each project is described with links to code repositories and reflects the ability 
+                        to solve complex problems and work with different technologies.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>[Project 1 Name]</h3>
+                            <p>[Project description goes here. Describe the key features, technologies used, and impact of your project.]</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">[Technology 1]</span>
+                                <span class="tech-tag">[Technology 2]</span>
+                                <span class="tech-tag">[Technology 3]</span>
+                                <span class="tech-tag">[Technology 4]</span>
+                                <span class="tech-tag">[Technology 5]</span>
+                                <span class="tech-tag">[Technology 6]</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/[username]/[repo1]" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span>Code</span>
+                                    <div class="link-icon">🔗</div>
+                                </a>
+                                <a href="https://[your-project1].netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span>Live Demo</span>
+                                    <div class="link-icon">🚀</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>[Project 2 Name]</h3>
+                            <p>[Project description goes here. Explain the problem solved, your approach, and the technologies implemented.]</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">[Technology 1]</span>
+                                <span class="tech-tag">[Technology 2]</span>
+                                <span class="tech-tag">[Technology 3]</span>
+                                <span class="tech-tag">[Technology 4]</span>
+                                <span class="tech-tag">[Technology 5]</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/[username]/[repo2]" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span>Code</span>
+                                    <div class="link-icon">🔗</div>
+                                </a>
+                                <a href="https://[your-project2].netlify.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span>Live Demo</span>
+                                    <div class="link-icon">🚀</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-content">
+                            <h3>[Project 3 Name]</h3>
+                            <p>[Project description goes here. Highlight the unique features, technical challenges overcome, and user impact.]</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">[Technology 1]</span>
+                                <span class="tech-tag">[Technology 2]</span>
+                                <span class="tech-tag">[Technology 3]</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/[username]/[repo3]" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span>Code</span>
+                                    <div class="link-icon">🔗</div>
+                                </a>
+                                <a href="https://[your-project3].streamlit.app" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span>Live Demo</span>
+                                    <div class="link-icon">🚀</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Get In Touch</span>
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-cta">
+                        <p class="contact-description">
+                            Interested in working together? Let's connect and discuss how we can collaborate on projects.
+                        </p>
+                        
+                        <!-- Contact Form -->
+                        <form id="contact-form" class="contact-form" name="portfolio-contact" method="POST" data-netlify="true" netlify action="/thanks">
+                            <input type="hidden" name="form-name" value="portfolio-contact">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary contact-submit">
+                                <span id="submit-text">Send Message</span>
+                                <div class="btn-arrow">→</div>
+                            </button>
+                        </form>
+                        
+                        <!-- Success Message -->
+                        <div id="form-success" class="form-message success-message hidden">
+                            <div class="message-icon">✓</div>
+                            <p>Message sent successfully! You'll get a response soon.</p>
+                        </div>
+                        
+                        <!-- Error Message -->
+                        <div id="form-error" class="form-message error-message hidden">
+                            <div class="message-icon">⚠</div>
+                            <p>Sorry, there was an error sending your message. Please try again.</p>
+                        </div>
+                        
+                        <div class="contact-actions">
+                            <a href="mailto:[your.email@example.com]" class="btn btn-secondary">
+                                <span>Direct Email</span>
+                                <div class="btn-arrow">→</div>
+                            </a>
+                            <a href="resume.pdf" download="[Your_Name]_Resume.pdf" class="btn btn-secondary">
+                                <span>Download Resume</span>
+                                <div class="btn-icon">📄</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Three.js Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js" defer></script>
+    <script src="script.js?v=3.0" defer></script>
+</body>
+</html>
