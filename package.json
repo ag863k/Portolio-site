@@ -1,0 +1,44 @@
+{
+  "name": "3d-portfolio-template",
+  "version": "1.0.0",
+  "description": "3D Interactive Portfolio Website built with Three.js",
+  "main": "index.html",
+  "homepage": "https://[yourusername].github.io/3d-portfolio/",
+  "scripts": {
+    "start": "npx http-server . -p 8000 -o",
+    "dev": "npx http-server . -p 8000 -o",
+    "build": "echo 'Static site - no build process needed'",
+    "deploy": "gh-pages -d .",
+    "predeploy": "npm run build",
+    "test": "echo 'No tests specified'",
+    "lighthouse": "lighthouse http://localhost:8000 --output html --output-path ./lighthouse-report.html"
+  },
+  "keywords": [
+    "portfolio",
+    "threejs",
+    "3d",
+    "web-development",
+    "fullstack",
+    "interactive",
+    "resume",
+    "github-pages"
+  ],
+  "author": "[Your Name] <[your.email@example.com]>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/[yourusername]/3d-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/[yourusername]/3d-portfolio/issues"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "gh-pages": "^6.0.0",
+    "lighthouse": "^11.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}

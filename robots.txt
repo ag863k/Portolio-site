@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: /sitemap.xml
+
+# Optimize for search engines
+Crawl-delay: 1
+
+# Block unnecessary paths
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /package*.json
+Disallow: /README.md

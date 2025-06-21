@@ -1,0 +1,60 @@
+[build]
+  publish = "."
+  command = "echo 'Static site ready'"
+
+# Form handling
+[[plugins]]
+  package = "@netlify/plugin-form-submissions"
+
+# Email notifications for form submissions  
+[build.environment]
+  NODE_VERSION = "18"
+
+# Forms configuration
+[[forms]]
+  name = "portfolio-contact"
+  
+[[forms.fields]]
+  name = "name"
+  type = "text"
+  
+[[forms.fields]]
+  name = "email" 
+  type = "email"
+  
+[[forms.fields]]
+  name = "message"
+  type = "textarea"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "*.pdf"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[redirects]]
+  from = "/thanks"
+  to = "/thanks.html"
+  status = 200
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
